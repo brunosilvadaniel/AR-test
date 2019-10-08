@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script></script>
+    <script></script>
+    <script></script>
+    <script></script>
+  </head>
+  <body>
+    <a-scene>
+      <a-assets>
+        <a-asset-item id="Barril" src=""></a-asset-item>
+        <a-asset-item id="castelo" src=""></a-asset-item>
+      </a-assets>
+      <a-marker preset="hiro">
+        <a-entity gltf-model="#Barril"></a-entity>
+      </a-marker>
+      <a-marker type="pattern" src="">
+        <a-entity gltf-model="#castelo"></a-entity>
+      </a-marker>
+      <a-marker type="patterno" src="">
+        <a-link></a-link>
+      </a-marker>
+      <a-entity camera></a-entity>
+    </a-scene>
+  </body>
+</html>
