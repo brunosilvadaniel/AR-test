@@ -16,7 +16,8 @@
       <a-assets>
 	<a-asset-item id="Barril-obj" src="/Modelos/Barril/scene.gltf"></a-asset-item>	 
 	<a-asset-item id="Castelo-obj" src="/Modelos/Castelo/scene.gltf"></a-asset-item>
-	<a-asset-item id="Carrinho-obj" src="/Modelos/Carrinho/scene.gltf"></a-asset-item>					  
+	<a-asset-item id="Carrinho-obj" src="/Modelos/Carrinho/scene.gltf"></a-asset-item>
+	<a-asset-item id="ImagePage2" src="Marcadores/Castelo-Marcador.png">
       </a-assets>
       <a-marker type="pattern" url="Marcadores/Barril.patt">
         <a-entity id="Barril" gltf-model="#Barril-obj"; scale="0.0075 0.0075 0.0075"></a-entity>
@@ -31,7 +32,7 @@
       </a-marker>
 										     
       <a-marker preset="hiro">
-	<a-link href="Page2.html" title="funcionou"></a-link>
+	<a-link href="Page2.html" title="funcionou"; image="#"></a-link>
       </a-marker>
                                                                        
       <a-entity camera></a-entity>
