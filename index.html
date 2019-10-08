@@ -1,39 +1,45 @@
 <!DOCTYPE html>
-<html>
-  <head><
+<html lang="en">
+  <head>
+    <title>Hello!</title>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <link rel="stylesheet" href="/style.css">
     <script src="https://aframe.io/releases/0.9.2/aframe.min.js"></script>
     <script src="https://cdn.rawgit.com/jeromeetienne/AR.js/1.6.0/aframe/build/aframe-ar.js"></script>
-    <script></script>
-    <script></script>
-  </head>
+    <script src="/script.js" defer></script>
+  </head>  
   <body>
-    <a-scene stats; embedded arjs="trackingMethod: best;">
-      <a-assets>
-        <a-asset-item id="Barril-obj" src="/Modelos/Barril/scene.gltf"></a-asset-item>
-        <a-asset-item id="Castelo-obj" src="/Modelos/Castelo/scene.gltf"></a-asset-item>
-        <a-asset-item id="Carrinho-obj" src="/Modelos/Carrinho/scene.gltf"></a-asset-item>
-      </a-assets>
-      <a-marker preset="hiro">
+    <a-scene stats; embedded arjs="trackingMethod: best;"">
+      <a-marker type="pattern" url="https://cdn.glitch.com/47194659-4e43-4647-bc00-a0576b10abf1%2Fpattern-duck%20(1).patt?v=1568054821356">
         <a-box position="0 0.5 0" material="opacity: 0.5"; color="yellow">
           <a-torus-knot radius='0.26' radius-tubular='0.05'
-				    animation="property: rotation;
-			     	    to:360 0 0;
-				    dur: 4000;
-				    easing: linear; 
-				    loop: true">
-	  </a-torus-knot>
+				  animation="property: rotation; to:360 0 0; dur: 5000; easing: linear; loop: true">
+				  </a-torus-knot>
         </a-box>
+		  </a-marker>
+                                
+      <a-marker type="pattern" url="https://cdn.glitch.com/47194659-4e43-4647-bc00-a0576b10abf1%2Fpattern-B%20(1).patt?v=1568054537123">
+			 <a-box position="0 0.5 0" material="opacity: 0.5"; color="red">
+          <a-torus-knot radius="0.26" radius-tubular="0.05"
+          animation="property: rotation; to:360 0 0; dur:5000; easing: linear; loop: true">
+          </a-torus-knot>
+       </a-box>
+		  </a-marker>
+                                                                      
+      <a-marker preset="hiro">
+        <a-box position='0 0.5 0' material="opacity: 0.5"; color="blue">
+          <a-torus-knot radius='0.26' radius-tubular='0.05'
+				  animation="property: rotation; to:360 0 0; dur: 5000; easing: linear; loop: true">
+				  </a-torus-knot>                                                                                                                            
+        </a-box>                   
       </a-marker>
-      <a-marker type="pattern" src="/Marcadores/Barril.patt">
-        <a-entity id="Barril" gltf-model="#Barril-obj" scale="0.005 0.005 0.005"></a-entity>
-      </a-marker>
-      <a-marker type="pattern" src="/Marcadores/Castelo.patt">
-        <a-entity id="Castelo" gltf-model="Castelo-obj" scale="0.005 0.005 0.005"></a-entity>
-      </a-marker>
+                                                                       
       <a-entity camera></a-entity>
     </a-scene>
+    <div class="glitchButton" style="position:fixed;top:20px;right:20px;"></div>
+    <script src="https://button.glitch.me/button.js"></script>
   </body>
 </html>
