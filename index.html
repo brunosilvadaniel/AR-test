@@ -11,6 +11,22 @@
     <script src="https://cdn.rawgit.com/jeromeetienne/AR.js/1.6.0/aframe/build/aframe-ar.js"></script>
     <script src="<script src="dist/aframe-no-click-look-controls.min.js"></script>
     <script src="/script.js" defer></script>
+    <script>
+  	AFRAME.registerComponent('navigate-on-click', {
+    		schema: {
+      		url: {default: ''}
+    	},
+
+    	init: function () {
+    	  var data = this.data;
+    	  var el = this.el;
+
+      	el.addEventListener('click', function () {
+        	window.location.href = data.url;
+      		});
+    	}
+  	});        
+  </script>			   
   </head>  
   <body>
     <a-scene stats; embedded arjs="trackingMethod: best;"">
