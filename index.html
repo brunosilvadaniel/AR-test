@@ -22,11 +22,11 @@
 	<a-asset-item id="Page2-image" src="/Marcadores/Carrinho-marcador.png"></a-asset-item>
       </a-assets>
        <a-marker markerhandler emitevents="true" cursor="rayOrigin: mouse" id="animated-marker" type=pattern url="Marcadores/Barril.patt">
-	<a-box  id="animated-model"></a-box>
+	 <a-entity id="Castelo" gltf-model="#Castelo-obj"; scale="0.05 0.05 0.05">
       </a-marker>
                                 
       <a-marker markerhandler emitevents="true" cursor="rayOrigin: mouse" id="Castelo-marcador"type="pattern" url="Marcadores/Castelo.patt">
-       <a-entity id="Castelo" gltf-model="#Castelo-obj"; scale="0.05 0.05 0.05">
+       <a-box></a-box>
       </a-marker>
                                                                       
       <a-marker markerhandler emitevents="true" cursor="rayOrigin: mouse"id="Carrinho-marcador" type="pattern" url="Marcadores/Carrinho.patt">
