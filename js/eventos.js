@@ -7,7 +7,7 @@ AFRAME.registerComponent('markerhandler', {
         animatedMarker.addEventListener('click', function(ev, target){
             const intersectedElement = ev && ev.detail && ev.detail.intersectedEl;
             if (aEntity && intersectedElement === aEntity) {
-                window.location.href = "https://www.youtube.com/watch?v=wXQQVMQO8y4";
+                window.location.href = "/page2.html";
             }
         });
 }});
