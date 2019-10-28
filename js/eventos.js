@@ -7,7 +7,7 @@ AFRAME.registerComponent('markerhandler', {
         animatedMarker.addEventListener('click', function(ev, target){
             const intersectedElement = ev && ev.detail && ev.detail.intersectedEl;
             if (aEntity && intersectedElement === aEntity) {
-                window.location.href = "brunosilvadaniel.github.io/Page2.html";
+                window.location.href = "/Page2.html";
             }
         });
 }});
