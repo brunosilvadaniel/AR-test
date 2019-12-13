@@ -16,5 +16,3 @@ AFRAME.registerComponent('vidhandler', {
   }
 });
 let estado;
-estado = document.querySelector("#hiro-marker").object3D.visible;
-console.log(estado);
