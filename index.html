@@ -13,8 +13,8 @@
   </head>  
   <body>
     <a-scene embedded arjs='sourceType: webcam; debugUIEnabled: false; detectionMode: mono_and_matrix; matrixCodeType: 3x3;'>
-      <a-marker preset="hiro">
-          <a-video rotation="90 0 0"autoplay="false" loop="true" src="src/video-test2.mp4"></a-video>
+      <a-marker preset="hiro" id="hiro-marker">
+          <a-video id="vid" rotation="90 0 0"autoplay="false" loop="true" src="src/video-test2.mp4"></a-video>
       </a-marker>      
         <a-entity camera></entity>      
     </a-scene>
